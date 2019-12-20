@@ -149,3 +149,10 @@ let x=a.indexOf(e);
   return x===-1 ? "Not found" :x;
 }
 ```
+
+#### JavaScript Array Filter
+```javascript
+function getEvenNumbers(num){
+  return num.filter(el => el % 2 === 0);
+}
+```
