@@ -156,3 +156,60 @@ function getEvenNumbers(num){
   return num.filter(el => el % 2 === 0);
 }
 ```
+
+#### Find how many times did a team from a given country win the Champions League?
+```javascript
+function countWins(winnerList, country) {
+  let c = 0;
+  for (let i = 0; i < winnerList.length; i++) {
+    if (winnerList[i].country === country) c++;
+  }
+  return c;
+} 
+```
+
+#### Array.diff
+```javascript
+function array_diff(a, b) {
+  return a.filter(x => !b.includes(x));
+}  
+```
+
+#### Train to remove duplicates from an array with filter()
+```javascript
+function unique(arr) {
+ return arr.filter (function (value, index, array) { 
+    return array.indexOf (value) == index;
+});
+
+}
+```
+
+#### Two Oldest Ages
+```javascript
+function twoOldestAges(ages){
+   const sorted =  ages.sort((a, b) => b - a);
+   return Array.of(sorted[1], sorted[0]);
+}
+```
+
+#### String Templates - Bug Fixing #5
+```javascript
+function buildString(...template){
+  return `I like ${template.join(', ')}!`;
+}
+```
+
+#### Printing Array elements with Comma delimiters
+```javascript
+function printArray(array){
+ return array.join();
+}
+```
+
+#### CSV representation of array
+```javascript
+function toCsvText(array) {
+   return array.join("\n");
+}
+```
