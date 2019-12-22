@@ -249,3 +249,17 @@ const arr1 = arr.replace(/\s/g,'').split(",").slice(1, -1);
 return arr1.length === 0 ? null : arr1.join(" ");
 }
 ```
+
+#### Template Strings
+```javascript
+var TempleStrings = function(obj, feature) {
+  return `${obj} are ${feature}`;
+}
+```
+
+#### get character from ASCII Value
+```javascript
+function getChar(c){
+  return String.fromCharCode(c);
+}
+```
