@@ -263,3 +263,98 @@ function getChar(c){
   return String.fromCharCode(c);
 }
 ```
+
+#### Regex validate PIN code
+```javascript
+function validatePIN (pin) {
+  if (!(pin.length === 4 || pin.length === 6)) return false;
+  let num = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0'];
+  for (let i = 0; i < pin.length; i++) {
+      if (!num.includes(pin[i])) return false;
+  }
+  return true;
+}
+```
+
+#### Numbers to Letters
+```javascript
+function switcher(x){
+let a = {
+  '29': ' ',
+  '28': '?',
+  '27': '!',
+  '26': 'a',
+  '25': 'b',
+  '24': 'c',
+  '23': 'd',
+  '22': 'e',
+  '21': 'f',
+  '20': 'g',
+  '19': 'h',
+  '18': 'i',
+  '17': 'j',
+  '16': 'k',
+  '15': 'l',
+  '14': 'm',
+  '13': 'n',
+  '12': 'o',
+  '11': 'p',
+  '10': 'q',
+  '9': 'r',
+  '8': 's',
+  '7': 't',
+  '6': 'u',
+  '5': 'v',
+  '4': 'w',
+  '3': 'x',
+  '2': 'y',
+  '1': 'z'
+}
+  r = '';
+  for(let i = 0; i < x.length; i++) {
+    r = r + a[x[i]];
+  }
+  return r;
+}
+```
+
+#### Unique In Order
+```javascript
+var uniqueInOrder=function(iterable){
+  let res = [];
+  let last = '';
+  
+  for(let i = 0; i < iterable.length; i++){
+    if(iterable[i] !== last){
+      last = iterable[i]
+      res.push(last);
+    }
+  }
+  return res;
+}
+```
+
+#### Regex count lowercase letters
+```javascript
+function lowercaseCount(str){
+let count = 0;
+let alph = 'abcdefghijklmnopqrstuvwxyz';
+    for(let i = 0; i <= str.length; i++){
+      if(alph.includes(str[i]) && str[i].toLowerCase() === str[i]){
+        count ++;
+      }
+    }
+    return count;
+}
+```
+
+#### Spacify
+```javascript
+function spacify(str) {
+let str1 = '';
+  for(let i = 0; i < str.length; i++){
+    str1 = str1 + str[i] + ' ';
+  }
+  return str1.slice(0, -1);
+}
+```
