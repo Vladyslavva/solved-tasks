@@ -213,3 +213,39 @@ function toCsvText(array) {
    return array.join("\n");
 }
 ```
+
+#### Enumerable Magic #1 - True for All?
+```javascript
+function all( arr, fun ){
+ return arr.every(fun);
+}
+```
+
+#### Grasshopper - Array Mean
+```javascript
+var findAverage = function (nums) {
+ return  nums.reduce((accum, cur) => accum + cur) / nums.length;
+}
+```
+
+#### Beginner - Reduce but Grow
+```javascript
+function grow(x){
+ return x.reduce ((accum, cur) => accum * cur, 1)
+}
+```
+
+#### SpeedCode #2 - Array Madness
+```javascript
+function arrayMadness(a, b) {
+  return (a.reduce((acc, cur) => acc + cur ** 2, 1)) > (b.reduce((acc, cur) => acc + cur ** 3, 1)) ? true : false;
+}
+```
+
+#### Remove First and Last Character Part Two
+```javascript
+function array(arr){
+const arr1 = arr.replace(/\s/g,'').split(",").slice(1, -1);
+return arr1.length === 0 ? null : arr1.join(" ");
+}
+```
