@@ -358,3 +358,23 @@ let str1 = '';
   return str1.slice(0, -1);
 }
 ```
+
+#### Thinking & Testing : Something capitalized
+
+```javascript
+function testit(s){
+  if(s === "") return "";
+    else return s.split(" ").map( el => el.slice(0, -1) + el[el.length - 1].toUpperCase()).join(" ");
+}
+```
+
+#### Find the capitals
+```javascript
+var capitals = function (word) {
+  const arr = [];
+	for(let i = 0; i < word.length; i++){
+    if(word[i].toUpperCase() === word[i]) arr.push(i);
+  }
+  return arr;
+}
+```
