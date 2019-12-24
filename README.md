@@ -378,3 +378,36 @@ var capitals = function (word) {
   return arr;
 }
 ```
+
+#### Don't give me five!
+```javascript
+function dontGiveMeFive(start, end){
+  let count = 0;
+  for(let i = start; i <= end; i++){
+    if(!i.toString().includes("5")) count++;
+  }
+  return count;
+}
+```
+
+#### Find the position!
+```javascript
+function position(letter){
+ let alp = "abcdefghijklmnopqrstuvwxyz";
+   return "Position of alphabet: " + (alp.indexOf(letter) + 1);
+}
+```
+
+#### Tail Swap
+```javascript
+function tailSwap(arr) {
+  return [arr[0].slice(0, arr[0].indexOf(":")) + arr[1].slice(arr[1].indexOf(":")), arr[1].slice(0, arr[1].indexOf(":")) + arr[0].slice(arr[0].indexOf(":"))];
+}
+```
+
+#### Credit Card Mask
+```javascript
+function maskify(cc) {
+  return cc.length < 4 ? cc : '#'.repeat(cc.length - 4) + cc.slice(-4);
+}
+```
