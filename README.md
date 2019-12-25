@@ -458,3 +458,31 @@ function findLongest(str) {
 return longest;
 }
 ```
+
+#### Name Shuffler
+```javascript
+function nameShuffler(str){
+  let arr =  str.split(' ');
+    let first = arr[0];
+    let last = arr[arr.length - 1];
+    arr[0] = last;
+    arr[arr.length - 1] = first;
+  return arr.join(' ');
+}
+```
+
+#### Reversing Words in a String
+```javascript
+function reverse(str){
+  if (str === '') return '';
+  return str.split(' ').reverse().join(' ');
+  }
+```
+
+#### Descending Order
+```javascript
+function descendingOrder(n){
+console.log(n);
+ return +n.toString().split('').sort((a, b) => (a < b)).join('');
+}
+```
