@@ -411,3 +411,50 @@ function maskify(cc) {
   return cc.length < 4 ? cc : '#'.repeat(cc.length - 4) + cc.slice(-4);
 }
 ```
+
+#### Vowel remover
+```javascript
+function shortcut(string){
+ //let newStr = '';
+  //for(let i = 0; i < string.length; i++){
+   return string.split('').map(x=>x.replace( /[aeiou]/g, '' )).join('');
+  //}
+}
+```
+
+#### Exclamation marks series #2: Remove all exclamation marks from the end of sentence
+```javascript
+function remove(s){
+  return s.replace(/!+$/g, '');
+}
+```
+
+#### Get number from string
+```javascript
+function getNumberFromString(s) {
+  return +s.replace(/[^0-9.]/g, '');
+}
+```
+
+#### FIXME: Replace all dots
+```javascript
+var replaceDots = function(str) {
+  return str.replace(/\./g, '-');
+}
+```
+
+#### Squash the bugs
+```javascript
+function findLongest(str) {
+  
+  var spl = str.split(" ");
+  var longest = 0;
+  
+  for (var i = 0; i < spl.length; i++) {
+    if (spl[i].length > longest) {
+      longest = spl[i].length
+    }
+}
+return longest;
+}
+```
