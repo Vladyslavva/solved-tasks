@@ -486,3 +486,46 @@ console.log(n);
  return +n.toString().split('').sort((a, b) => (a < b)).join('');
 }
 ```
+
+#### Can Santa save Christmas?
+```javascript
+function determineTime(dur){
+let sum = 0;
+  for(let i = 0; i < dur.length; i++){
+    let arr = dur[i].split(":");
+    let h = +arr[0];
+    let min = arr[1]/60;
+    let sec = arr[2]/3600;
+    sum = sum + h + min + sec;
+  }
+  return sum <= 24;
+}
+```
+
+#### Every possible sum of two digits
+```javascript
+function digits(num){
+  let arr = num.toString().split('');
+  //console.log(arr);
+  let rez = [];
+  for (let i = 0; i < arr.length - 1; i++) {
+    for (let j = i + 1; j < arr.length; j++) {
+      rez.push(+arr[i] + +arr[j]);
+    }
+  }
+  return rez;
+}
+```
+
+#### Make a function that does arithmetic!
+```javascript
+function arithmetic(a, b, operator){
+  switch(operator){
+   case "add": return a+b;
+   case "subtract": return a-b;
+   case "divide": return a/b;
+   case "multiply": return a*b;
+   }
+   
+}
+```
