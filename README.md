@@ -529,3 +529,12 @@ function arithmetic(a, b, operator){
    
 }
 ```
+
+#### makeBackronym
+```javascript
+//preload variable: dict
+
+var makeBackronym = function(string){
+  return string.split('').map(e => dict[e.toUpperCase()]).join(' ');
+}
+```
