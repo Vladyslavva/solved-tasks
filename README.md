@@ -538,3 +538,38 @@ var makeBackronym = function(string){
   return string.split('').map(e => dict[e.toUpperCase()]).join(' ');
 }
 ```
+
+#### Job Matching #1
+```javascript
+function match(candidate, job) {
+console.log(candidate.minSalary);
+if (candidate.minSalary === undefined || job.maxSalary === undefined)  throw "Error";
+  return candidate.minSalary - 0.1 * candidate.minSalary <= job.maxSalary;
+}
+```
+
+#### Add property to every object in array
+```javascript
+ for(let i = 0; i < questions.length; i++){
+   questions[i].usersAnswer = null;
+ }
+```
+
+#### Numbers to Objects
+```javascript
+function numObj(s){
+  return s.map(function(e) {let o = {}; o[e] = String.fromCharCode(e); return o;});
+  
+}
+```
+
+#### Coding Meetup #5 - Higher-Order Functions Series - Prepare the count of languages
+```javascript
+function countLanguages(list) {
+    return list.reduce(function(res, el) {
+        if(isNaN(res[el.language]) || res[el.language] === undefined) res[el.language] = 1;
+        else res[el.language] += 1;
+        return res;
+    }, {})
+}
+```
