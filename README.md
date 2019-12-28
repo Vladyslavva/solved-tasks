@@ -573,3 +573,42 @@ function countLanguages(list) {
     }, {})
 }
 ```
+
+#### What is my name score? #1
+```javascript
+function nameScore(name){
+  let sum = 0;
+  let obj = {};
+  for(let i = 0; i < name.length; i++){
+    for(let key in alpha){
+    //console.log(alpha[key]);
+      if(key.includes(name[i].toUpperCase())) sum = sum + alpha[key];
+    }
+  }
+  obj[name] = sum;
+  return obj;
+}
+```
+
+#### The Office I - Outed
+```javascript
+function outed(meet, boss){
+    let sum = 0;
+    for(let key in meet){
+        if(key === boss) sum = sum + meet[key] * 2;
+        else sum = sum + meet[key];
+    }
+    return sum / Object.keys(meet).length <= 5 ?  'Get Out Now!' : 'Nice Work Champ!'
+}
+```
+
+#### Most valuable character
+```javascript
+function solve(st) {
+    const obj = {};
+    for(let i = 0; i < st.length; i++){
+        obj[st[i]] = st.lastIndexOf(st[i]) - st.indexOf(st[i]);
+    }
+    return Object.keys(obj).reduce((a, b) => obj[a] > obj[b] ? a : obj[a] != obj[b] ? b : a > b ? b : a);
+}
+```
