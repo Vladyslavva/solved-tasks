@@ -612,3 +612,28 @@ function solve(st) {
     return Object.keys(obj).reduce((a, b) => obj[a] > obj[b] ? a : obj[a] != obj[b] ? b : a > b ? b : a);
 }
 ```
+
+#### Permute a Palindrome
+```javascript
+function permuteAPalindrome (input) {
+    let resCount = count(input);
+    cnt = 0;
+    for(let key in resCount){
+        if(resCount[key] % 2 !== 0) {
+            cnt++;
+            if (cnt > 1) return false;
+        }
+    }
+    return true;
+}
+
+function count(str){
+    let obj = {};
+    for(let i = 0; i < str.length; i++){
+        if(str[i] in obj){
+            obj[str[i]] += 1;
+        } else obj[str[i]] = 1;
+    }
+    return obj;
+}
+```
