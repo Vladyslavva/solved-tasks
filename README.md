@@ -637,3 +637,49 @@ function count(str){
     return obj;
 }
 ```
+
+#### How many days are we represented in a foreign country?
+```javascript
+function daysRepresented(trips){
+let cnt = 0;
+  trips.sort((a, b) => (a[0] - b[0]));
+  checkDates(trips);
+  for(let i = 0; i < trips.length; i++){
+    let days = trips[i][1] - trips[i][0] + 1;
+    cnt += days;
+  }
+   return cnt;
+}
+
+function checkDates(dates) {
+  let res = [];
+  for(let i = 0; i < dates.length - 1; i++) {
+    if (dates[i][1] >= dates[i + 1][0]) {
+      dates[i][1] = dates[i + 1][1];
+      dates.splice(i + 1, 1);
+      i--;
+    }
+  }
+}
+```
+
+#### The Office II - Boredom Score
+```javascript
+function boredom(staff){
+let scores = {'accounts': 1,
+'finance': 2,
+'canteen': 10,
+'regulation': 3,
+'trading': 6,
+'change': 6,
+'IS': 8,
+'retail': 5,
+'cleaning': 4,
+'pissing about': 25
+}
+ let arr = Object.entries(staff);
+ let cnt = arr.reduce((a, b) => (a + scores[b[1]]), 0);
+ console.log(arr);
+ return cnt <= 80 ? 'kill me now' : cnt < 100 && cnt > 80 ? 'i can handle this' : 'party time!!';
+}
+```
