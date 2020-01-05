@@ -731,3 +731,14 @@ function converter (mpg) {
   return +mpg.toFixed(2);
 }
 ```
+
+#### Fix the Bugs (Syntax) - My First Kata
+```javascript
+function  myFirstKata(a, b) {
+  if (typeof a !== "number" || typeof b !== "number") {
+   return false;
+  } else {
+   return a % b + b % a;
+  }
+}
+```
