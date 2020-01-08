@@ -749,3 +749,10 @@ function isTriangle(a,b,c){
 return (a < b + c && b < a + c && c < a + b);
 }
 ```
+
+#### Training JS #6: Basic data types--Boolean and conditional statements if..else
+```javascript
+function trueOrFalse(val){
+  return typeof val === "boolean" ? val + "" : !!val + "";
+}
+```
