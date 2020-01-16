@@ -815,3 +815,13 @@ if (n === 0) return 0;
     return n;
 }
 ```
+
+#### Find the Slope
+```javascript
+function slope(p){
+if (p[2] - p[0]=== 0) return "undefined";
+ // (d-b)/(c-a)
+  let res = (p[3] - p[1])/ (p[2] - p[0]);
+  return res.toString();
+}
+```
