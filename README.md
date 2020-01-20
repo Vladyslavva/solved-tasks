@@ -825,3 +825,16 @@ if (p[2] - p[0]=== 0) return "undefined";
   return res.toString();
 }
 ```
+
+#### Simple Fun #87: Shuffled Array
+```javascript
+function shuffledArray(shuf) {
+ let sum = 0;
+ output = [];
+ sum = shuf.reduce((a,b) => a+b);
+ output = shuf.sort((a,b) => a-b);
+ let el = sum/2;
+ let temp = output.splice(output.indexOf(el), 1);
+ return output;
+}
+```
