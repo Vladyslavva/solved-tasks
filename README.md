@@ -838,3 +838,14 @@ function shuffledArray(shuf) {
  return output;
 }
 ```
+
+#### Power
+```javascript
+function numberToPower(n, pow){
+ let p = 1;
+  for(let i = 1; i <= pow; i++){
+    p = p * n;
+  }
+  return p;
+}
+```
