@@ -867,3 +867,21 @@ function getSum( a,b ){
    return sum;
 }
 ```
+
+#### Smallest Difference
+```javascript
+function smallestDiff(arr1, arr2) {
+    if(arr1.length === 0 && arr2.length === 0) return -1;
+    if(arr1.length === 0) return Math.min(...arr2);
+    if(arr2.length === 0) return Math.min(...arr1);
+    let min = Math.abs(arr2[0] - arr1[0]);
+    for(let i = 0; i < arr1.length; i++) {
+        for(let j = 0; j < arr2.length; j++) {
+            let diff = Math.abs(arr2[i] - arr1[j]);
+            if (diff < min) min = diff;
+        }
+    }
+    return min;
+}
+```
+
