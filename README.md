@@ -884,4 +884,15 @@ function smallestDiff(arr1, arr2) {
     return min;
 }
 ```
-
+#### Javascript Mathematician
+```javascript
+function calculate() {
+let s = 0;
+    for (let i = 0; i < arguments.length; i++) s = s + arguments[i];
+    return function(){
+    let s2 = 0;
+    for (let j = 0; j < arguments.length; j++) s2 = s2 + arguments[j];
+    return s + s2;
+  };
+}
+```
