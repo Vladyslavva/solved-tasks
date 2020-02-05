@@ -896,3 +896,25 @@ let s = 0;
   };
 }
 ```
+
+#### Sum Strings as Numbers
+```javascript
+function sumStrings(a,b) { 
+let zeros = Math.abs(b.length - a.length);
+if(a.length < b.length){
+  a = '0'.repeat(zeros) + a;
+} else b = '0'.repeat(zeros) + b;
+ let result = '';
+ let p = 0;
+ for(let i = a.length - 1; i >= 0; i--){
+   let sum = +a[i] + +b[i] + p;
+   if(sum >= 10){
+     result = sum % 10 + result;
+     p = 1;
+   } else {result = sum % 10 + result; p = 0;}
+  }
+  if(p === 1) result = p + result;
+  return result.replace(/^0+/, '');
+ 
+}
+```
