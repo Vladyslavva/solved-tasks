@@ -918,3 +918,18 @@ if(a.length < b.length){
  
 }
 ```
+
+#### The wheat/rice and chessboard problem
+```javascript
+function squaresNeeded(grains){
+ let count = 0;
+ let sum = 0;
+ let x = 1;
+ while(sum <grains){
+  sum += x;
+  count++;
+  x *= 2;
+ }
+ return count;
+}
+```
