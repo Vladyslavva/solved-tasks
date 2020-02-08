@@ -933,3 +933,20 @@ function squaresNeeded(grains){
  return count;
 }
 ```
+
+#### What will be the odd one out?
+```javascript
+function oddOneOut(str) {
+   let obj = {};
+   let out= [];
+   for(let i = 0; i < str.length; i++){
+     if(!obj[str[i]]) obj[str[i]] = 1;
+     else delete obj[str[i]];
+     }
+   for(let i = 0; i < str.length; i++){
+     if(obj[str[i]] && str.lastIndexOf(str[i]) === i)
+     out.push(str[i]);
+   }  
+   return out;
+}
+```
