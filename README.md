@@ -950,3 +950,35 @@ function oddOneOut(str) {
    return out;
 }
 ```
+
+#### Bingo Card
+```javascript
+function getRandom(min, max) {
+ return Math.floor(Math.random() * (max - min + 1) + min); 
+}
+
+function fillArr(min, max, n){
+  let arr = [];
+  for(let i = 0; arr.length < n; i++){
+    let r = getRandom(min, max);
+    if(!arr.includes(r)) arr.push(r);
+  }
+  return arr;
+}
+function getCard(){
+  let obj = {
+  'B': fillArr(1, 15, 5),
+  'I': fillArr(16, 30, 5),
+  'N': fillArr(31, 45, 4),
+  'G': fillArr(46, 60, 5),
+  'O': fillArr(61, 75, 5),
+  };
+  let final = [];
+  for(let i in obj) {
+    for(let j = 0; j < obj[i].length; j++){
+      final.push(i + obj[i][j]);
+    }
+  }
+  return final;
+}
+```
