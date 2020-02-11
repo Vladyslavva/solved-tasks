@@ -982,3 +982,12 @@ function getCard(){
   return final;
 }
 ```
+#### Regexp Basics - is it a digit?
+```javascript
+String.prototype.digit = function() {
+  let arr = this.match(/[0-9]/g);
+  if(!arr) return false;
+  else if(this.length === arr.length && arr.length === 1) return true;
+  else return false;
+};
+```
