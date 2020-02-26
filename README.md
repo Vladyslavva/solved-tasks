@@ -991,3 +991,14 @@ String.prototype.digit = function() {
   else return false;
 };
 ```
+
+#### Remove the minimum
+```javascript
+function removeSmallest(numbers) {
+ if(numbers.length === 0) return [];
+ let min = Math.min(...numbers);
+ let index = numbers.indexOf(min);
+ let arr = numbers.filter((el, i) => i != index);
+ return arr;
+}
+```
