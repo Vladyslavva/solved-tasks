@@ -1002,3 +1002,15 @@ function removeSmallest(numbers) {
  return arr;
 }
 ```
+
+#### Find the Difference in Age between Oldest and Youngest Family Members
+```javascript
+function differenceInAges(ages){
+  let max = Math.max(...ages);
+  let min = Math.min(...ages);
+  let dif = max - min;
+  let res = [];
+  res.push(min, max, dif);
+  return res;
+}
+```
