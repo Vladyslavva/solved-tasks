@@ -1014,3 +1014,19 @@ function differenceInAges(ages){
   return res;
 }
 ```
+
+#### Find the Difference in Age between Oldest and Youngest Family Members
+```javascript
+function differenceInAges(ages){
+  let resArr = [];
+  let minAge = ages[0];
+  let maxAge = ages[0];
+  for (let i = 0; i < ages.length; i++){
+    if(ages[i] < minAge) minAge = ages[i];
+    if(ages[i] > maxAge) maxAge = ages[i];
+  }
+  let dif = maxAge - minAge;
+  resArr.push(minAge, maxAge, dif);
+  return resArr;
+}
+```
