@@ -1038,3 +1038,11 @@ function divide(weight){
     else return false;
 }
 ```
+
+#### Beginner Series #1 School Paperwork
+```javascript
+function paperwork(n, m) {
+  if (n < 0 || m < 0) return 0;
+  else return n * m;
+}
+```
