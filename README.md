@@ -1054,3 +1054,11 @@ const areaOrPerimeter = function(l , w) {
     else return (l + w) * 2;
 }
 ```
+
+#### noobCode 01: SUPERSIZE ME.... or rather, this integer!
+```javascript
+function superSize(num){
+if(num >= 0 && num < 10) return num;
+  return +num.toString().split('').sort((a, b) => (b - a)).join('');
+}
+```
