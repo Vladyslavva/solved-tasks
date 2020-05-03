@@ -1062,3 +1062,11 @@ if(num >= 0 && num < 10) return num;
   return +num.toString().split('').sort((a, b) => (b - a)).join('');
 }
 ```
+
+#### N-th Power
+```javascript
+function index(array, n){
+ if(array.length < n + 1) return -1;
+ return Math.pow(array[n], n);
+}
+```
