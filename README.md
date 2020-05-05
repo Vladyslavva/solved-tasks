@@ -1080,3 +1080,11 @@ for(let i = a; i <= b; i++){
 return arr;
 }
 ```
+
+#### Simple validation of a username with regex
+```javascript
+function validateUsr(username) {
+ let res =  /^[a-z0-9\_]{4,16}$/.test(username) ;
+  return res;
+}
+```
