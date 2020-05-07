@@ -1088,3 +1088,10 @@ function validateUsr(username) {
   return res;
 }
 ```
+
+#### Remove exclamation marks
+```javascript
+function removeExclamationMarks(s) {
+  return s = s.replace (/!/g, "");
+}
+```
