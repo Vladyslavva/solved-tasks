@@ -1096,3 +1096,11 @@ function removeExclamationMarks(s) {
 }
 ```
 
+#### Testing Palindromes
+```javascript
+palindrome = function(str) {
+  if(str.split('').reverse( ).join('').toLowerCase() === str.toLowerCase()) return true;
+    return false;
+}
+```
+
