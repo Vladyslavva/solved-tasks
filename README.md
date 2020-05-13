@@ -1104,7 +1104,10 @@ palindrome = function(str) {
 }
 ```
 
-####
+#### Take the Derivative
 ```javascript
-
+function derive(coef,exp) {
+ return `${coef * exp}x^${exp - 1}`;
+  }
 ```
+
