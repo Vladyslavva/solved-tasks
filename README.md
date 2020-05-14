@@ -1111,4 +1111,12 @@ function derive(coef,exp) {
   }
 ```
 
+#### Exclusive "or" (xor) Logical Operator
+```javascript
+function xor(a, b) {
+  if (a === b) return false;
+  else return true;
+}
+```
+
 
