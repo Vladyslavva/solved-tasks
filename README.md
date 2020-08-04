@@ -1160,4 +1160,10 @@ def solution(a, b):
         return a + b + a
 ```
 
+#### Grasshopper - Debug sayHello
+```python
+def say_hello(name):
+    return("Hello, " + name)  
+```
+
 
