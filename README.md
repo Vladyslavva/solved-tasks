@@ -1175,4 +1175,16 @@ def sakura_fall(v):
         return 400/v
 ```
 
+#### Find Multiples of a Number
+```python
+#     return list(range(int, limit + 1, int))
+
+    nums = []
+    i = int
+    while i <= limit:
+        nums.append(i)
+        i = i + int
+    return nums
+```
+
 
