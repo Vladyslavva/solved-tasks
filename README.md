@@ -1187,4 +1187,12 @@ def sakura_fall(v):
     return nums
 ```
 
+#### Smallest unused ID
+```python
+def next_id(arr):
+    if len(arr) == 0:
+        return 0
+    return min(set(list(range(max(arr) + 2))) - set(arr))
+```
+
 
