@@ -1195,4 +1195,20 @@ def next_id(arr):
     return min(set(list(range(max(arr) + 2))) - set(arr))
 ```
 
+#### Adding Big Numbers
+```python
+function add (a, b) {
+  let res = '' 
+  let  c = 0
+  a = a.split('')
+  b = b.split('')
+  while (a.length || b.length || c) {
+    c += ~~a.pop() + ~~b.pop()
+    res = c % 10 + res
+    c = c > 9
+  }
+  return res
+}
+```
+
 
