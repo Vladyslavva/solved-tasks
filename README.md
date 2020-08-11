@@ -1211,4 +1211,10 @@ function add (a, b) {
 }
 ```
 
+#### Grasshopper - Function syntax debugging
+```python
+def main (verb, noun):
+    return verb + noun
+```
+
 
