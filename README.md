@@ -1231,3 +1231,9 @@ def quarter_of(month):
 
 ```
 
+#### Reversed sequence
+```python
+def reverse_seq(n):
+    return list(range(1, n+1))[::-1]
+```
+
