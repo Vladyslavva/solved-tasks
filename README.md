@@ -1237,3 +1237,12 @@ def reverse_seq(n):
     return list(range(1, n+1))[::-1]
 ```
 
+#### Grasshopper - If/else syntax debug
+```python
+def check_alive(health):
+    if health <= 0:
+        return False
+    else:
+        return True
+```
+
