@@ -1246,3 +1246,10 @@ def check_alive(health):
         return True
 ```
 
+#### Grasshopper - Variable Assignment Debug
+```python
+a = "dev"
+b = "Lab"
+name = a + b
+```
+
