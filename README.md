@@ -1272,3 +1272,24 @@ var rooms = {
   },
 }
 ```
+
+#### Debug the functions EASY
+```javascript
+function multi(arr) {
+//   let x = 1;
+//   for(let i = 0; i < arr.length; i++){
+//     x = x * arr[i]
+//   }
+//   return x;
+  return arr.reduce((accum, cur) => accum * cur, 1);
+}
+
+function add(arr) {
+  return arr.reduce((accum, cur) => accum + cur);
+}
+
+function reverse(str) {
+  console.log(str)
+  return str.split("").reverse().join("");
+}
+```
