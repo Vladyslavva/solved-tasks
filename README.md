@@ -1304,3 +1304,12 @@ var calculate = function calculate(a, o, b) {
    else return null;
   }
 ```
+
+#### Sort Numbers
+```javascript
+function solution(nums){
+if(nums === null || nums.length === 0) return [];
+  return nums.sort((a, b) => a - b);
+}
+```
+
