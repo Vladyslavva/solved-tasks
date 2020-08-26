@@ -1254,7 +1254,7 @@ name = a + b
 ```
 
 #### Grasshopper - Object syntax debug
-```python
+```javascript
 var rooms = {
   first: {
     description: 'This is the first room',
@@ -1311,5 +1311,13 @@ function solution(nums){
 if(nums === null || nums.length === 0) return [];
   return nums.sort((a, b) => a - b);
 }
+```
+
+#### Sort Numbers
+```python
+def solution(nums):
+    if nums is None or len(nums) == 0:
+        return []
+    return sorted(nums)
 ```
 
