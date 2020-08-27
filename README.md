@@ -1337,3 +1337,17 @@ def calculate(a, o, b):
         return None
 ```
 
+#### Return a string's even characters
+```python
+def even_chars(st): 
+    list = []
+    if len(st) < 2 or len(st) > 100:
+        return "invalid string"
+    i = 1
+    for l in st:
+        if i % 2 == 0:
+            list.append(l)
+        i = i + 1    
+    return list
+```
+
