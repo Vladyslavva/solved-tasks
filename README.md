@@ -1351,3 +1351,16 @@ def even_chars(st):
     return list
 ```
 
+#### Return a string's even characters
+```javascript
+function evenChars(str) {
+if(str.length < 2 || str.length > 100) return "invalid string"
+  let arr = [];
+  for(let i = 0; i < str.length; i++){
+    if(i % 2 !== 0)
+      arr.push(str[i]);
+  }
+  return arr;
+}
+```
+
