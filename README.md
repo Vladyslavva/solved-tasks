@@ -1376,3 +1376,17 @@ function validBraces(str){
 }
 ```
 
+#### Valid Braces
+```python
+def validBraces(str):
+    dic = {"(": ")",
+           "[": "]",
+           "{": "}"}
+    i = 0
+    for char in str:
+        if char in dic.keys():
+            if not (dic[char] == str[i+1] or (dic[char] == str[len(str)-1-i]) and i < len(str)/2):
+                return False
+        i = i+ 1
+    return True
+```
