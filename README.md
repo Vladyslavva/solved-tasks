@@ -1390,3 +1390,12 @@ def validBraces(str):
         i = i+ 1
     return True
 ```
+
+#### Parse float
+```python
+def parse_float(str):
+    try:
+        return float(str)
+    except:
+        return None
+```
