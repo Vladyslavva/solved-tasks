@@ -1431,3 +1431,10 @@ function greetDevelopers(list) {
   return list;
 }
 ```
+
+#### Coding Meetup #3 - Higher-Order Functions Series - Is Ruby coming?
+```javascript
+function isRubyComing(list) {
+ return Boolean(list.find(el => el.language === 'Ruby'));
+}
+```
