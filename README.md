@@ -1438,3 +1438,17 @@ function isRubyComing(list) {
  return Boolean(list.find(el => el.language === 'Ruby'));
 }
 ```
+
+#### Coding Meetup #6 - Higher-Order Functions Series - Can they code in the same language?
+```javascript
+function isSameLanguage(list) {
+  return list.filter( (v, i, a) => IOL(a, v.language) === i).length === 1;
+}
+
+function IOL(arr, language){
+  for(let i = 0; i < arr.length; i++){
+    if(arr[i].language === language) return i;
+  }
+  return -1;
+}
+```
