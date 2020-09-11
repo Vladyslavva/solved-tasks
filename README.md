@@ -1464,3 +1464,12 @@ def cookie(x):
     else:
         return "Who ate the last cookie? It was the dog!"
 ```
+
+#### Is Undefined?
+```javascript
+function isUndefined(v) {
+  console.log(typeof v);
+    if(typeof v === "undefined") return true;
+     return false;
+}
+```
