@@ -1473,3 +1473,9 @@ function isUndefined(v) {
      return false;
 }
 ```
+
+#### Series of integers from m to n
+```python
+def generate_integers(m, n): 
+    return list(range(m, n+1))
+```
