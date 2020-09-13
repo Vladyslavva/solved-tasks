@@ -1479,3 +1479,9 @@ function isUndefined(v) {
 def generate_integers(m, n): 
     return list(range(m, n+1))
 ```
+
+#### Simple Fun #152: Invite More Women?
+```python
+def invite_more_women(arr):
+    return sum(arr) > 0
+```
