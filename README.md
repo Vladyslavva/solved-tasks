@@ -1485,3 +1485,17 @@ def generate_integers(m, n):
 def invite_more_women(arr):
     return sum(arr) > 0
 ```
+
+#### Simple Fun #152: Invite More Women?
+```javascript
+function inviteMoreWomen(L) {
+  let cnt1 = 0;
+  let cnt2 = 0;
+  for(let i = 0; i < L.length; i++){
+    if(L[i] === -1) cnt1++;
+    else cnt2++;
+  }
+  if(cnt1 > cnt2 || cnt1 === cnt2) return false;
+    return true;
+}
+```
