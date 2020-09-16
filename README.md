@@ -1499,3 +1499,10 @@ function inviteMoreWomen(L) {
     return true;
 }
 ```
+
+#### Find the middle element
+```javascript
+var gimme = function (arr) {
+  return [...arr].indexOf(arr.sort((a,b)=>a-b)[1])
+}
+```
