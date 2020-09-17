@@ -1506,3 +1506,14 @@ var gimme = function (arr) {
   return [...arr].indexOf(arr.sort((a,b)=>a-b)[1])
 }
 ```
+
+#### Find the middle element
+```python
+def gimme(input_array):
+    minEl = min(input_array)
+    maxEl = max(input_array)
+    i = 0
+    for el in input_array:
+        if el < maxEl and el > minEl: return i
+        i = i + 1
+```
