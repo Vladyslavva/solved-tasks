@@ -1517,3 +1517,15 @@ def gimme(input_array):
         if el < maxEl and el > minEl: return i
         i = i + 1
 ```
+
+#### Training JS #10: loop statement --for
+```javascript
+function pickIt(arr){
+  var odd=[],even=[];
+  for(let i = 0; i < arr.length; i++){
+    if(arr[i] % 2 === 0) even.push(arr[i]);
+     else odd.push(arr[i]);
+  }
+  return [odd,even];
+}
+```
