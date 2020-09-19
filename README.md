@@ -1529,3 +1529,12 @@ function pickIt(arr){
   return [odd,even];
 }
 ```
+
+#### List Filtering
+```javascript
+function filter_list(l) {
+  const a = l.filter(el => typeof(el) === 'number');
+  return a;
+}
+
+```
