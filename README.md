@@ -1536,5 +1536,14 @@ function filter_list(l) {
   const a = l.filter(el => typeof(el) === 'number');
   return a;
 }
+```
 
+#### List Filtering
+```python
+def filter_list(l):
+    newList = []
+    for num in l:
+        if type(num) == int:
+            newList.append(num)
+    return newList
 ```
