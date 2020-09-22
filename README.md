@@ -1547,3 +1547,17 @@ def filter_list(l):
             newList.append(num)
     return newList
 ```
+
+#### Filter out the vowels
+```javascript
+function vowelFilter (letters) {
+  var vowels = ["a", "e", "i", "o", "u"];
+  
+  for(let i = 0; i < letters.length; i++){
+    if(vowels.includes(letters[i])){
+      letters.splice(i--, 1);
+    }
+  }
+  return letters;
+};
+```
