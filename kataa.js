@@ -1,5 +1,5 @@
 function vowelFilter (letters) {
-  var vowels = ["a", "e", "i", "o", "u"];
+  let vowels = ["a", "e", "i", "o", "u"];
 
   for(let i = 0; i < letters.length; i++){
     if(vowels.includes(letters[i])){
@@ -10,7 +10,25 @@ function vowelFilter (letters) {
   }
   return letters;
 
-};
+}
+
+function vowelFilter1 (letters) {
+  let vowels = ["a", "e", "i", "o", "u"];
+
+  for(let i = 0; i < vowels.length; i++){
+    if(letters.includes(vowels[i])){
+      while(letters.indexOf(vowels[i]) != -1){
+        letters.splice(letters.indexOf(vowels[i]), 1);
+      }
+
+    }
+    console.log(letters[i]);
+  }
+  return letters;
+
+}
+
+
 
 let abc = vowelFilter(["i", "s", "e", "a", "w", "e", "m"]);
 console.log(abc);
