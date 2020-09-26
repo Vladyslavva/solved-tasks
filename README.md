@@ -1562,7 +1562,7 @@ function vowelFilter (letters) {
 };
 ```
 
-#### sreveR
+#### sreveR (with push)
 ```javascript
 reverse = function(array) {
   let arr = [];
@@ -1580,4 +1580,15 @@ def reverse(lst):
     for i in lst:
         empty_list.insert(0, i)
     return empty_list
+```
+
+#### sreveR (with unshift)
+```javascript
+reverse = function(array) {
+  let arr = [];
+  for(let i = 0; i < array.length; i++){
+    arr.unshift(array[i]);
+  }
+  return arr;
+}
 ```
