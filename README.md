@@ -1592,3 +1592,8 @@ reverse = function(array) {
   return arr;
 }
 ```
+
+#### Sort array by string length
+```javascript
+const sortByLength = array => [...array].sort((a, b) => a.length - b.length)
+```
