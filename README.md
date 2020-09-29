@@ -1597,3 +1597,10 @@ reverse = function(array) {
 ```javascript
 const sortByLength = array => [...array].sort((a, b) => a.length - b.length)
 ```
+
+#### Ones and Zeros
+```javascript
+const binaryArrayToNumber = arr => {
+ return parseInt(arr.join(""), 2);
+  }
+```
