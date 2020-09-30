@@ -1604,3 +1604,9 @@ const binaryArrayToNumber = arr => {
  return parseInt(arr.join(""), 2);
   }
 ```
+
+#### Ones and Zeros
+```python
+def binary_array_to_number(arr):
+    return int("".join([str(int) for int in arr]), 2)
+```
