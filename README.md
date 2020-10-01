@@ -1610,3 +1610,10 @@ const binaryArrayToNumber = arr => {
 def binary_array_to_number(arr):
     return int("".join([str(int) for int in arr]), 2)
 ```
+
+#### Array element parity
+```javascript
+function solve(arr){
+   return arr.find(el =>!arr.includes (-el));
+};
+```
