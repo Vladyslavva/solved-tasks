@@ -1617,3 +1617,9 @@ function solve(arr){
    return arr.find(el =>!arr.includes (-el));
 };
 ```
+
+#### BASIC: Making Six Toast
+```python
+def six_toast(num):
+    return abs(num - 6)
+```
