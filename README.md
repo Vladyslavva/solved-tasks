@@ -1623,3 +1623,10 @@ function solve(arr){
 def six_toast(num):
     return abs(num - 6)
 ```
+
+#### How many times should I go?
+```python
+import math
+def how_many_times(annual_price, individual_price):
+    return math.ceil(annual_price/individual_price)
+```
