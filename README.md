@@ -1630,3 +1630,10 @@ import math
 def how_many_times(annual_price, individual_price):
     return math.ceil(annual_price/individual_price)
 ```
+
+#### Improving Math.round(x)
+```javascript
+Math.roundTo = function (number, precision) {
+ return Math.round(number * Math.pow(10,precision))/Math.pow(10,precision);
+}
+```
