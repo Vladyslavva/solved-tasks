@@ -1637,3 +1637,10 @@ Math.roundTo = function (number, precision) {
  return Math.round(number * Math.pow(10,precision))/Math.pow(10,precision);
 }
 ```
+
+#### Sum of Minimums!
+```javascript
+function sumOfMinimums(arr) {
+  return arr.reduce((acc, cur) => (acc + Math.min(...cur)), 0);
+}
+```
