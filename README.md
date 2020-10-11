@@ -1644,3 +1644,9 @@ function sumOfMinimums(arr) {
   return arr.reduce((acc, cur) => (acc + Math.min(...cur)), 0);
 }
 ```
+
+#### Show multiples of 2 numbers within a range
+```python
+def multiples(s1,s2,s3):
+     return [i for i in range(s1, s3) if i % s1 == 0 and i % s2 == 0]
+```
