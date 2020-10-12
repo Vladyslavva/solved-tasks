@@ -1650,3 +1650,21 @@ function sumOfMinimums(arr) {
 def multiples(s1,s2,s3):
      return [i for i in range(s1, s3) if i % s1 == 0 and i % s2 == 0]
 ```
+
+#### Start with a Vowel
+```python
+import re
+def vowel_start(st):
+    print(st)
+    s = ''
+    st = st.replace(" ", "")
+    vowels = ['a', 'u', 'o', 'i', 'e']
+    regex = re.compile('[^a-zA-Z0-9]')
+    st = regex.sub('', st)
+    for l in st:
+        if l.lower() in vowels:
+            s = s + ' ' + l.lower()
+        else:
+            s = s + l.lower()
+    return s.strip()
+```
