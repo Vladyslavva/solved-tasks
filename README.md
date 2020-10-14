@@ -1668,3 +1668,9 @@ def vowel_start(st):
             s = s + l.lower()
     return s.strip()
 ```
+
+#### Contamination #1 -String-
+```python
+def contamination(text, char):
+    return char * len(text)
+```
