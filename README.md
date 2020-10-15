@@ -1674,3 +1674,16 @@ def vowel_start(st):
 def contamination(text, char):
     return char * len(text)
 ```
+
+#### All Star Code Challenge #3
+```python
+def remove_vowels(strng):
+    str = list(strng)
+    i = 0
+    while i < len(str):
+        if str[i] == "a" or str[i] == "e" or str[i] == "i" or str[i] == "o" or str[i] == "u":
+            str.remove(str[i])
+            i = i - 1
+        i = i + 1
+    return "".join(str)
+```
