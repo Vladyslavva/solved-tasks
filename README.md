@@ -1687,3 +1687,9 @@ def remove_vowels(strng):
         i = i + 1
     return "".join(str)
 ```
+
+#### Filling an array (part 1)
+```python
+def arr(n=0): 
+    return list(range(n))
+```
