@@ -1693,3 +1693,14 @@ def remove_vowels(strng):
 def arr(n=0): 
     return list(range(n))
 ```
+
+#### Duplicate sandwich
+```python
+def duplicate_sandwich(arr):
+    i = 0
+    while len(arr):
+        temp = arr[i]
+        arr.remove(temp)
+        if temp in arr:
+            return arr[:arr.index(temp)]
+```
