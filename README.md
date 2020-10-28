@@ -1704,3 +1704,10 @@ def duplicate_sandwich(arr):
         if temp in arr:
             return arr[:arr.index(temp)]
 ```
+
+#### Grasshopper - Summation
+```python
+def summation(num):
+#     return sum([i for i in range(num + 1)])
+    return sum(range(num+1))
+```
