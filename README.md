@@ -1711,3 +1711,14 @@ def summation(num):
 #     return sum([i for i in range(num + 1)])
     return sum(range(num+1))
 ```
+
+#### Sentence to words
+```javascript
+function splitSentence(s) {
+  let x = s.replace(/[^A-Za-z0-9]+/g, " ");
+    const arr = x.trim().split(" ");
+    return arr;
+}
+```
+
+
