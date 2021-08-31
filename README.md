@@ -1721,4 +1721,11 @@ function splitSentence(s) {
 }
 ```
 
+#### V A P O R C O D E
+```javascript
+function vaporcode(string) {
+  return string.toUpperCase().split(" ").join("").split("").join("  ");
+}
+```
+
 
