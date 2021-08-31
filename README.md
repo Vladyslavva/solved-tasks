@@ -1728,4 +1728,11 @@ function vaporcode(string) {
 }
 ```
 
+#### No Loops 1 - Small enough?
+```javascript
+function smallEnough(a, l){
+  return a.every(el => el <= l)
+}
+```
+
 
